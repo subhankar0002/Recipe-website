@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="recipestyle.css">
+    <script src="MainScript.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Recipe Hub</div>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" onclick="RemoveSearchbar()">Home</a></li>
+                <li><a href="#recipes" onclick="GetSearchbar()">Recipes</a></li>
+                <li><a href="#about" onclick="RemoveSearchbar()">About</a></li>
+                <li><a href="#contact" onclick="RemoveSearchbar()">Contact</a></li>
+            </ul>
+            <div class="search-bar" id="search-bar">
+                <input class="search-box" type="text" placeholder="Search recipes...">
+                <a href="#recipes"><button type="submit" class="search-btn">Search</button></a>
+            </div>
+        </nav>
+    </header>
+    <!-- home page......................... -->
+    <section class="hero">
+        <div class="hero-slider" id="hero-slider">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F767048.jpg&f=1&nofb=1&ipt=e73ef3ad98b52a7d2fc1c752a96772c696502335f44737aa8ea104993ac2d2ec&ipo=images"
+                alt="Image 1">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4056225.jpg&f=1&nofb=1&ipt=b30853ecfc67dfb554f05cae7a6a433477b3b17e7ee290c1ec0cf91337be177b&ipo=images"
+                alt="Image 2">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F715491.jpg&f=1&nofb=1&ipt=feb107a1f2268272330a40bcdaa8fa956d89ec5de156989e0d48d8ca44976693&ipo=images"
+                alt="Image 3">
+        </div>
+        <div id="hero-normal" class="hero-normal">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fe0.pxfuel.com%2Fwallpapers%2F511%2F938%2Fdesktop-wallpaper-natural-food-organic-food.jpg&f=1&nofb=1&ipt=c5a3c958d225f8324a9c3829034f18414ac9d028c0f3b23da54880015fad7683&ipo=images"
+                alt="Image 1">
+        </div>
+
+        <div class="hero-content" id="hero-content">
+            <h1>Discover Delicious Recipes</h1>
+            <p>Cook your favorite dishes with ease and passion.</p>
+            <a href="#recipes" class="btn" onclick="GetSearchbar()">Search Recipes</a>
+            <section class="intro-section">
+                <h2 id="peragraph">Discover the Joy of Cooking</h2>
+                <p id="peragraph">At Recipe Hub, we believe that cooking is an art and a science. Whether you are a
+                    beginner or a
+                    seasoned chef, we have something for everyone. Explore our wide range of recipes, learn new
+                    techniques, and share your culinary creations with our vibrant community of food enthusiasts. Let’s
+                    make cooking fun and inspiring!</p>
+            </section>
+        </div>
+
+    </section>
+    <!-- recipe section............................ -->
+    <section id="recipes" class="recipes-section">
+        <h2 id="recipe-heading">Popular Recipes</h2>
+        <div class="recipe-grid">
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Spaghetti Carbonara">
+                <div class="card-content">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>A creamy classic Italian dish.</p>
+                    <a href="viewRecipes.html" class="btn">View Recipe</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Chicken Curry">
+                <div class="card-content">
+                    <h3>Chicken Curry</h3>
+                    <p>Rich and flavorful Indian-style curry.</p>
+                    <a href="#" class="btn">View Recipe</a>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe3.jpg" alt="Chocolate Cake">
+                <div class="card-content">
+                    <h3>Chocolate Cake</h3>
+                    <p>A decadent dessert for sweet lovers.</p>
+                    <a href="#" class="btn">View Recipe</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="recipesection-blank">
+    </div>
+    <!-- about section........................... -->
+    <section id="about">
+        <div class="aboutsection-blank">
+
+        </div>
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                We aim to bring you closer to the joy of cooking by providing easy-to-follow, high-quality recipes that
+                inspire creativity and confidence in the kitchen.
+            </p>
+        </section>
+        <section class="values">
+            <h2>What We Value</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Quality</h3>
+                    <p>We test every recipe to ensure you get the best results every time.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Creativity</h3>
+                    <p>Discover unique flavors and new ideas to elevate your cooking.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Community</h3>
+                    <p>We love connecting with fellow food enthusiasts like you!</p>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="team1.jpg" alt="Team Member 1">
+                    <h3>Alex Smith</h3>
+                    <p>Founder & Head Chef</p>
+                </div>
+                <div class="team-member">
+                    <img src="team2.jpg" alt="Team Member 2">
+                    <h3>Jamie Doe</h3>
+                    <p>Recipe Curator</p>
+                </div>
+                <div class="team-member">
+                    <img src="team3.jpg" alt="Team Member 3">
+                    <h3>Taylor Lee</h3>
+                    <p>Food Photographer</p>
+                </div>
+            </div>
+        </section>
+
+
+    </section>
+    <!-- contact section......................... -->
+    <section class="contact-main" id="contact">
+        <div class="contactsection-blank">
+        </div>
+        <section class="contact-hero">
+            <h2>We’d Love to Hear from You!</h2>
+            <p>Your feedback helps us the best experience for you!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Email: <a href="sahav0117@gmail.com">sahav0117@gmail.com</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-github"></i>
+                    <p>Github: <a href="https://github.com/subhankar0002">subhankar0002</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>Linkedin: <a href="https://www.linkedin.com/in/subhankar-saha-29512b30a/">Subhankar Saha
+                        </a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <p>Twitter: <a href="https://x.com/Subhankar_002">Subhankar_002</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="" method="post" name="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                        required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Recipe Hub. All rights reserved.</p>
+    </footer>
+    <script src="MainScript.js"></script>
+</body>
+
+</html>
