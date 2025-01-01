@@ -82,7 +82,7 @@ const fetchRecipes = async (query) => {
 const DataGoTORecipePage=(idMeal)=>{
     const data = { a: idMeal };
     localStorage.setItem("sharedData", JSON.stringify(data));
-    window.location.href = 'RecipeDetails.html';
+    window.location.href = 'app/RecipeDetails.html';
 };
 
 // main page loaded
