@@ -163,7 +163,7 @@ a:hover {
     }
     #hero-content{
         display: block;
-        z-index: 10;
+        z-index: 0;
         width: 90%;
     }
     #hero-slider{
